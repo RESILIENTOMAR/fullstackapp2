@@ -10,3 +10,135 @@ img {
 .fa-trash:before {
   content: '\f00d';
 }
+
+#indexBody {
+  background: url("img/lion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#indexBody .jumbotron {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#indexBody h1 {
+  color: green;
+  margin-top: -10px;
+  text-shadow: 2px 2px 2px white;
+}
+
+#indexBody p {
+  color: white;
+  margin-top: 300px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#login {
+  background: url('img/login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#login h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 3px 2px 2px black;
+  margin-top: 274px;
+  margin-right: 173px;
+}
+
+#login p {
+  color: white;
+  margin-left: 110px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#login label {
+  color: white;
+  text-shadow: 3px 3px 2px black;
+  font-size: 2rem;
+}
+
+#login input {
+  background: rgba(255, 255, 255, 0.503);
+  color: black;
+  width: 400px;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px 2px whitesmoke;
+}
+
+
+
+#login button {
+  border: 5px groove silver;
+  margin-left: 150px;
+  height: 60px;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
+#loginLine {
+  width: 400px;
+  margin-left: 0;
+}
+
+/* //=======================sign up=================// */
+
+#signup {
+  background: url("img/soccerball.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#signup h1 {
+  color: orange;
+  text-shadow: 2px 2px 2px black;
+}
+
+#signup label {
+  text-shadow: 2px 2px 2px white;
+  font-size: 1.5rem;
+}
+
+#signup p {
+  color: white;
+}
+
+#signup a {
+  color: red;
+  text-shadow: 2px 2px 2px black;
+}
+
+#signup button {
+  text-shadow: 2px 2px 2px black;
+}
+
+/*==============PROFILE==================*/
+#profile {
+  background-image: url("img/field.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+#info {
+  width: 200px;
+  text-shadow: 2px 2px 2px white;
+  color: black;
+  background: rgba(255, 255, 255, 0.53);
+}
+
+/*============team================*/
+#team {
+  background: url('img/blacklion.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#team h1 {
+  color: white;
+  text-align: center;
+}

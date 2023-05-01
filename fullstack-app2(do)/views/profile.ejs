@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="profile">
   <div class="container">
 
     <div class="page-header text-center">
@@ -22,22 +22,7 @@
 
       <!-- LOCAL INFORMATION -->
       <div class="col-sm-6">
-        <div class="well">
-          <h3><span class="fa fa-user"></span> Local</h3>
 
-          <% if (user.local.email) { %>
-            <p>
-              <strong>id</strong>: <%= user._id %><br>
-                <strong>email</strong>: <%= user.local.email %><br>
-                  <strong>password</strong>: <%= user.local.password %>
-            </p>
-
-            <a href="/unlink/local" class="btn btn-default">Unlink</a>
-            <% } else { %>
-              <a href="/connect/local" class="btn btn-default">Connect Local</a>
-              <% } %>
-
-        </div>
       </div>
       <div class="col-sm-6">
         <h3>Match Reminders</h3>
@@ -68,27 +53,41 @@
     <label for="teams">Select a Premier League team:</label>
     <select id="teams" onchange="goToTeam()">
       <option value="">--Choose a team--</option>
-      <option value="/team/arsenal">Arsenal</option>
-      <option value="/team/astonvilla">Aston Villa</option>
-      <option value="/team/brentford">Brentford</option>
-      <option value="/team/brighton">Brighton &amp; Hove Albion</option>
-      <option value="/team/burnley">Burnley</option>
-      <option value="/team/chelsea">Chelsea</option>
-      <option value="/team/crystalpalace">Crystal Palace</option>
-      <option value="/team/everton">Everton</option>
-      <option value="/team/leeds">Leeds United</option>
-      <option value="/team/leicester">Leicester City</option>
-      <option value="/team/liverpool">Liverpool</option>
-      <option value="/team/manchesterCity">Manchester City</option>
-      <option value="/team/manchesterUnited">Manchester United</option>
-      <option value="/team/newcastle">Newcastle United</option>
-      <option value="/team/norwich">Norwich City</option>
-      <option value="/team/southampton">Southampton</option>
-      <option value="/team/tottenham">Tottenham Hotspur</option>
-      <option value="/team/watford">Watford</option>
-      <option value="/team/westham">West Ham United</option>
-      <option value="/team/wolves">Wolverhampton Wanderers</option>
+      <option value="/team/Arsenal">Arsenal</option>
+      <option value="/team/Astonvilla">Aston Villa</option>
+      <option value="/team/Brentford">Brentford</option>
+      <option value="/team/Brighton">Brighton &amp; Hove Albion</option>
+      <option value="/team/Burnley">Burnley</option>
+      <option value="/team/Chelsea">Chelsea</option>
+      <option value="/team/Crystalpalace">Crystal Palace</option>
+      <option value="/team/Everton">Everton</option>
+      <option value="/team/Leeds">Leeds United</option>
+      <option value="/team/Leicester">Leicester City</option>
+      <option value="/team/Liverpool">Liverpool</option>
+      <option value="/team/ManchesterCity">Manchester City</option>
+      <option value="/team/ManchesterUnited">Manchester United</option>
+      <option value="/team/Newcastle">Newcastle United</option>
+      <option value="/team/Norwich">Norwich City</option>
+      <option value="/team/Southampton">Southampton</option>
+      <option value="/team/Tottenham">Tottenham Hotspur</option>
+      <option value="/team/Watford">Watford</option>
+      <option value="/team/Westham">West Ham United</option>
+      <option value="/team/Wolves">Wolverhampton Wanderers</option>
     </select>
+    <div class="well" id="info">
+      <h3><span class="fa fa-user"></span>Your Info</h3>
+
+      <% if (user.local.email) { %>
+        <p>
+          <strong>email</strong>: <%= user.local.email %><br>
+        </p>
+
+        <a href="/unlink/local" class="btn btn-default">Unlink</a>
+        <% } else { %>
+          <a href="/connect/local" class="btn btn-default">Connect Local</a>
+          <% } %>
+
+    </div>
 
     <script src="main.js"></script>
 

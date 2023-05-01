@@ -35,7 +35,7 @@ const logo = document.querySelector('img');
 
 function teamInfo() {
   const teamName = document.querySelector('option').value;
-  const url = `http://localhost:8005/api/${teamName}`;
+  const url = `http://localhost:8005/api/${team}`;
 
   fetch(url)
     .then((res) => res.json())

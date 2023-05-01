@@ -113,11 +113,10 @@ module.exports = function (app, passport, db) {
     }
 
   })
-  app.get('/teams', function (req, res) {
-    res.render('teams.ejs', {
-      team: team
-    });
+  app.get('/team', function (req, res) {
+    res.render('team', { team: team });
   });
+
 
 };
 
