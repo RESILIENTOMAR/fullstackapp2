@@ -124,6 +124,13 @@ img {
   text-shadow: 2px 2px 2px black;
 }
 
+#profileBtn {
+  background: rgba(255, 255, 255, 0.556);
+  font-size: 1.2rem;
+  border: 5px groove goldenrod;
+  border-radius: 20px;
+}
+
 #info {
   width: 200px;
   text-shadow: 2px 2px 2px white;
@@ -132,13 +139,46 @@ img {
 }
 
 /*============team================*/
+#name {
+  font-size: 5rem;
+  margin-top: 0;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+}
+
 #team {
   background: url('img/blacklion.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 50px;
 }
 
 #team h1 {
   color: white;
   text-align: center;
+}
+
+#coach {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+}
+
+#stars {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2rem;
+  word-spacing: 5px;
+}
+
+
+#trophies {
+  color: goldenrod;
+  text-shadow: 2px 2px 2px white;
+  font-size: 2.7rem;
+  margin-left: 100px;
+}
+
+#logo {
+  margin-left: 600px;
 }

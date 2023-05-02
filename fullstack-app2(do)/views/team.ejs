@@ -12,15 +12,19 @@
 <body id="team">
     <a href="/profile" class="btn btn-default btn-sm" id="profileBtn">👤Profile Page</a>
     <h1 id="name">
-        <%= team %>
+        <%= teamName %>
     </h1>
+    <img src="<%= team.logo %>" id="logo">
     <!-- class="<%= team %>FoodBtn" -->
     <h2 id="coach">
-        <%= team.coach %>
+        Coach: <%= team.name %>
     </h2>
-    <p id="stars"></p>
-    <p id="trophies"></p>
-    <img src="" alt="logo" id="logo">
+    <p id="stars">
+        ✪Star Players: <%= team.stars %>
+    </p>
+    <p id="trophies">
+        <%= team.trophies %> :Premier League Trophies🏆
+    </p>
 
 
     <script src="/main.js"></script>
